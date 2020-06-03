@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { documentToPlainTextString } from '@contentful/rich-text-plain-text-renderer';
 import readingTime from 'reading-time';
@@ -114,22 +114,23 @@ const Blog = props => {
           <div className="blogpost text-base sm:text-lg lg:text-xl font-normal sm:font-light">
             {documentToReactComponents(body.json, options)}
           </div>
-          <div className="bg-gray-100 p-4 rounded-t-lg mt-10 sm:mx-16 mb-1 shadow">
-            <div className="mx-4 flex justify-between items-center">
+
+          <div className="bg-gray-100 p-4 rounded-t-lg mb-1 mt-10 sm:mx-16 shadow">
+            <div className="mx-4 flex justify-between items-center ">
               <p className="text-sm sm:text-xl text-gray-700 italic">
                 Subcribe to my <span className="underline">awesome</span> tech newsletter
               </p>
 
-              <Link
-                to="/newsletter"
-                type="button"
+              <a
+                href="/newsletter"
                 className="bg-yellow-400 px-4 sm:px-10 py-1 text-black rounded-full 
                     ml-4 shadow text-lg sm:text-xl focus:outline-none animate-scale border-none"
               >
                 Join
-              </Link>
+              </a>
             </div>
           </div>
+
           <div className="bg-gray-100 p-4 rounded-b-lg mb-10 sm:mx-16 shadow">
             <div className="mx-4 flex justify-between items-center ">
               <p className="text-sm sm:text-xl text-gray-700 italic">
