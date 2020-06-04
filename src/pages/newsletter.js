@@ -17,6 +17,15 @@ const newsletter = () => {
         <p className="mt-6 md:mt-8 mx-2 font-normal texl-lg sm:text-xl">
           I write about my favorite articles, tools, books, and ideas.
         </p>
+        <p className="mt-3 md:mt-5 mx-2 font-normal text-lg sm:text-xl">
+          What you can expect to receive in your inbox:
+        </p>
+        <ul className="mt-3 italic list-disc font-normal text-lg list-inside sm:text-xl">
+          <li>Links to articles I find interesting</li>
+          <li>A short summary of books I read</li>
+          <li>Updates on projects I&apos;m developing</li>
+          <li>Bad jokes</li>
+        </ul>
         <div className="inline-block mt-1">
           <form
             className="text-sm"

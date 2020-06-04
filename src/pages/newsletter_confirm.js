@@ -12,8 +12,8 @@ const newsletter = () => {
           Thank you!
         </h1>
         <p className="mt-6 mx-2 font-normal texl-lg sm:text-xl">
-          Congratulations! <br />
-          You&apos;ve successfully signed up to my tech newsletter.
+          Wow! You&apos;ve successfully signed up to my newsletter. <br />
+          You&apos;ll be hearing from me soon. Take care!
         </p>
       </section>
     </Layout>
