@@ -7,7 +7,31 @@ import { TransitionProvider, TransitionViews } from 'gatsby-plugin-transitions';
 
 const Layout = ({ location, children }) => {
   return (
-    <TransitionProvider location={location} mode="immediate">
+    <TransitionProvider
+      location={location}
+      mode="successive"
+      enter={{
+        opacity: 0,
+        transform: 'translate3d(0,-10vh,0) scale3d(1, 1, 1) rotate(0deg)',
+        config: {
+          mass: 1,
+          tension: 210,
+          friction: 20,
+          clamp: true
+        }
+      }}
+      usual={{
+        opacity: 1,
+        transform: 'translate3d(0vh,0vh,0) scale3d(1, 1, 1) rotate(0deg)'
+      }}
+      leave={{
+        opacity: 0,
+        transform: 'translate3d(0vh,0vh,0) scale3d(2, 2, 1)',
+        config: {
+          duration: 250
+        }
+      }}
+    >
       <TransitionViews>{children}</TransitionViews>
     </TransitionProvider>
   );

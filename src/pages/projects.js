@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout/Layout';
 import Head from '../components/Head';
+import Title from '../components/Title';
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -23,10 +24,8 @@ const Projects = () => {
     <Layout>
       <Head title="Projects" desc="Take a look at my projects!" />
       <div className="text-center container mx-auto">
-        <h1 className="mt-8 mb-5 sm:text-3xl sm:font-semibold mx-4 sm:mx-0 text-xl">
-          Take a look at my Projects
-        </h1>
-        <div className="cards mx-2">
+        <Title>Take a look at my Projects</Title>
+        <div className="cards mx-3 mt-4">
           {data.allContentfulProject.edges.map(edge => {
             return (
               <div className="card rounded p-4 shadow-lg" key={edge.node.projectName}>

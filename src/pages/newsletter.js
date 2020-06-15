@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
 import Head from '../components/Head';
+import Title from '../components/Title';
 
 const newsletter = () => {
   return (
@@ -11,9 +12,7 @@ const newsletter = () => {
       />
 
       <section className="container mx-auto max-w-3xl text-center">
-        <h1 className="text-center mt-8 sm:text-3xl sm:font-semibold mx-4 sm:mx-0 text-xl">
-          Sign up to my newsletter
-        </h1>
+        <Title>Sign up to my newsletter</Title>
         <p className="mt-6 md:mt-8 mx-2 font-normal texl-lg sm:text-xl">
           I write about my favorite articles, tools, books, and ideas.
         </p>

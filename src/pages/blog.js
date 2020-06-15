@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout/Layout';
 import Head from '../components/Head';
+import Title from '../components/Title';
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -23,11 +24,11 @@ const BlogPage = () => {
       <Head title="Articles" desc="Welcome to my blog. Here's a list of all my articles." />
 
       <div>
-        <h1 className="text-center mt-8 sm:text-3xl sm:font-semibold mx-4 sm:mx-0 text-xl">
+        <Title>
           Here&apos;s a list of all my articles.
           <br />
           Subscribe to my <Link to="/newsletter">newsletter</Link> to not miss my next write-up.
-        </h1>
+        </Title>
         <ol className="mt-10 mx-5 sm:mx-auto sm:max-w-xl">
           {data.allContentfulBlogPost.edges.map(edge => {
             return (

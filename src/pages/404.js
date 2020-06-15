@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout/Layout';
 import Head from '../components/Head';
+import Title from '../components/Title';
 
 import NotFoundImage from '../svg/NotFoundImage';
 
@@ -11,7 +12,7 @@ const NotFound = () => {
       <Head title="Not Found" desc="Oops. Page not found." />
       <div className="flex items-start mt-8 sm:mt-16 justify-center">
         <div className="w-48 sm:w-64">
-          <h1 className="text-center text-4xl mb-5">404 ...</h1>
+          <Title>404 ...</Title>
           <NotFoundImage />
         </div>
       </div>

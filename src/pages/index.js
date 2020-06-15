@@ -194,7 +194,7 @@ const Index = () => {
       </section>
 
       {/* PRIMA SEZIONE PER MOBILE */}
-      <section className="block sm:hidden">
+      <section className="hidden sm:hidden">
         <div className="mt-5">
           <p
             className="text-red-600 font-semibold text-center 
