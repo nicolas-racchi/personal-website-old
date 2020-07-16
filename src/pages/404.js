@@ -10,18 +10,16 @@ const NotFound = () => {
   return (
     <Layout>
       <Head title="Not Found" desc="Oops. Page not found." />
-      <div className="flex items-start mt-8 sm:mt-16 justify-center">
+      <div className="flex items-start justify-center mt-8 sm:mt-16">
         <div className="w-48 sm:w-64">
           <Title>404 ...</Title>
           <NotFoundImage />
         </div>
       </div>
-      <div className="text-center mt-16">
+      <div className="mt-16 text-center">
         <Link to="/">
           <button
-            className="shadow bg-indigo-600
-                hover:bg-indigo-500 focus:shadow-outline focus:outline-none 
-                text-white py-2 px-4 rounded"
+            className="px-4 py-2 text-white bg-indigo-600 rounded shadow hover:bg-indigo-500 focus:shadow-outline focus:outline-none"
             type="button"
           >
             Go back Home

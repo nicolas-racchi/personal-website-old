@@ -29,18 +29,18 @@ const BlogPage = () => {
           <br />
           Subscribe to my <Link to="/newsletter">newsletter</Link> to not miss my next write-up.
         </Title>
-        <ol className="mt-10 mx-5 sm:mx-auto sm:max-w-xl">
+        <ol className="mx-5 mt-10 sm:mx-auto sm:max-w-xl">
           {data.allContentfulBlogPost.edges.map(edge => {
             return (
               <li className="my-4" key={edge.node.slug}>
                 <Link
-                  className="whitespace-nowrap border-none overflow-x-auto"
+                  className="overflow-x-auto border-none whitespace-nowrap"
                   to={`/blog/${edge.node.slug}`}
                 >
-                  <p className=" sm:inline-block uppercase text-red-600 mr-5 text-xs font-semibold tracking-wider">
+                  <p className="mr-5 text-xs font-semibold tracking-wider text-red-600 uppercase sm:inline-block">
                     {edge.node.publishedDate}
                   </p>
-                  <h2 className="inline-block  sm:text-lg font-light sm:hover:font-medium">
+                  <h2 className="inline-block font-light sm:text-lg sm:hover:font-medium">
                     {edge.node.title}
                   </h2>
                 </Link>

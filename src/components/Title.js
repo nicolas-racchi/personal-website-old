@@ -2,7 +2,7 @@ import React from 'react';
 
 function Title({ children }) {
   return (
-    <h1 className="text-center mt-8 sm:text-3xl md:text-4xl sm:font-semibold mx-2 text-2xl">
+    <h1 className="mx-2 mt-8 text-2xl text-center sm:text-3xl md:text-4xl sm:font-semibold">
       {children}
     </h1>
   );

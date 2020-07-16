@@ -25,18 +25,19 @@ const Index = () => {
 
   const edge = data.allContentfulBlogPost.edges;
 
+  // Shows the last 5 blog posts on the home page:
   function Show5Posts() {
     return (
-      <ul className="mt-5 mx-5 sm:mx-auto sm:max-w-xl">
+      <ul className="mx-5 mt-5 sm:mx-auto sm:max-w-xl">
         <li className="my-4">
           <Link
-            className="border-none whitespace-nowrap overflow-x-auto"
+            className="overflow-x-auto border-none whitespace-nowrap"
             to={`/blog/${edge[0].node.slug}`}
           >
-            <p className="text-left sm:inline-block uppercase text-red-600 mr-5 text-xs font-semibold tracking-wider">
+            <p className="mr-5 text-xs font-semibold tracking-wider text-left text-red-600 uppercase sm:inline-block">
               {edge[0].node.publishedDate}
             </p>
-            <h2 className="inline-block sm:text-lg font-light sm:hover:font-medium">
+            <h2 className="inline-block font-light sm:text-lg sm:hover:font-medium">
               {edge[0].node.title}
             </h2>
           </Link>
@@ -44,13 +45,13 @@ const Index = () => {
         </li>
         <li className="my-4">
           <Link
-            className="border-none whitespace-nowrap overflow-x-auto"
+            className="overflow-x-auto border-none whitespace-nowrap"
             to={`/blog/${edge[1].node.slug}`}
           >
-            <p className="text-left sm:inline-block uppercase text-red-600 mr-5 text-xs font-semibold tracking-wider">
+            <p className="mr-5 text-xs font-semibold tracking-wider text-left text-red-600 uppercase sm:inline-block">
               {edge[1].node.publishedDate}
             </p>
-            <h2 className="inline-block sm:text-lg font-light sm:hover:font-medium">
+            <h2 className="inline-block font-light sm:text-lg sm:hover:font-medium">
               {edge[1].node.title}
             </h2>
           </Link>
@@ -58,13 +59,13 @@ const Index = () => {
         </li>
         <li className="my-4">
           <Link
-            className="border-none whitespace-nowrap overflow-x-auto"
+            className="overflow-x-auto border-none whitespace-nowrap"
             to={`/blog/${edge[2].node.slug}`}
           >
-            <p className="text-left sm:inline-block uppercase text-red-600 mr-5 text-xs font-semibold tracking-wider">
+            <p className="mr-5 text-xs font-semibold tracking-wider text-left text-red-600 uppercase sm:inline-block">
               {edge[2].node.publishedDate}
             </p>
-            <h2 className="inline-block sm:text-lg font-light sm:hover:font-medium">
+            <h2 className="inline-block font-light sm:text-lg sm:hover:font-medium">
               {edge[2].node.title}
             </h2>
           </Link>
@@ -72,13 +73,13 @@ const Index = () => {
         </li>
         <li className="my-4">
           <Link
-            className="border-none whitespace-nowrap overflow-x-auto"
+            className="overflow-x-auto border-none whitespace-nowrap"
             to={`/blog/${edge[3].node.slug}`}
           >
-            <p className="text-left sm:inline-block uppercase text-red-600 mr-5 text-xs font-semibold tracking-wider">
+            <p className="mr-5 text-xs font-semibold tracking-wider text-left text-red-600 uppercase sm:inline-block">
               {edge[3].node.publishedDate}
             </p>
-            <h2 className="inline-block sm:text-lg font-light sm:hover:font-medium">
+            <h2 className="inline-block font-light sm:text-lg sm:hover:font-medium">
               {edge[3].node.title}
             </h2>
           </Link>
@@ -86,13 +87,13 @@ const Index = () => {
         </li>
         <li className="my-4">
           <Link
-            className="border-none whitespace-nowrap overflow-x-auto"
+            className="overflow-x-auto border-none whitespace-nowrap"
             to={`/blog/${edge[4].node.slug}`}
           >
-            <p className="text-left sm:inline-block uppercase text-red-600 mr-5 text-xs font-semibold tracking-wider">
+            <p className="mr-5 text-xs font-semibold tracking-wider text-left text-red-600 uppercase sm:inline-block">
               {edge[4].node.publishedDate}
             </p>
-            <h2 className="inline-block sm:text-lg font-light sm:hover:font-medium">
+            <h2 className="inline-block font-light sm:text-lg sm:hover:font-medium">
               {edge[4].node.title}
             </h2>
           </Link>
@@ -109,25 +110,23 @@ const Index = () => {
             day, I want to build robots that learn."
       />
 
-      {/* SEZIONE AVATAR + BIO */}
+      {/* AVATAR SECTION + BIO */}
       <section>
-        <div className="flex items-start mt-8 sm:mt-16 justify-center">
+        <div className="flex items-start justify-center mt-8 sm:mt-16">
           <div className="w-32 sm:w-48 md:w-56">
             <img src={profilepic} alt="profile pic" />
           </div>
         </div>
-        <div className="mt-5 mx-5 sm:mx-auto text-center sm:max-w-2xl">
-          <h3 className="text-base sm:text-2xl font-light">
+        <div className="mx-5 mt-5 text-center sm:mx-auto sm:max-w-2xl">
+          <h3 className="text-base font-light sm:text-2xl">
             Hi! I love spending time developing & building things.
             <br /> I write about the technologies that inspire me.
           </h3>
         </div>
-        <div className="mx-auto text-center mt-5">
+        <div className="mx-auto mt-5 text-center">
           <Link to="/newsletter" className="border-none">
             <button
-              className="shadow bg-red-700 
-                hover:bg-red-600 focus:outline-none
-                text-white py-1 sm:py-2 px-3 sm:px-4 rounded sm:font-medium tracking-wide"
+              className="px-3 py-1 tracking-wide text-white bg-red-700 rounded shadow hover:bg-red-600 focus:outline-none sm:py-2 sm:px-4 sm:font-medium"
               type="button"
             >
               Join my Newsletter
@@ -136,56 +135,53 @@ const Index = () => {
         </div>
       </section>
 
-      {/* PRIMA SEZIONE PER DESKTOP */}
-      <section className="container mx-auto hidden sm:block mx-12">
+      {/* FIRST SECTION - DESKTOP */}
+      <section className="container hidden mx-12 mx-auto sm:block">
         <div className="mt-5">
-          <p
-            className="text-red-600 font-semibold text-center 
-            text-lg sm:text-left sm:mt-12 sm:ml-10 sm:text-xl uppercase"
-          >
+          <p className="text-lg font-semibold text-center text-red-600 uppercase sm:text-left sm:mt-12 sm:ml-10 sm:text-xl">
             Featured Articles
           </p>
-          <hr className="mt-1 mx-10 shadow divider" />
+          <hr className="mx-10 mt-1 shadow divider" />
         </div>
 
-        <div className="mt-5 sm:mt-8 sm:ml-10 mx-5">
+        <div className="mx-5 mt-5 sm:mt-8 sm:ml-10">
           <div className="md:flex md:justify-center">
-            <Link to="/blog/ebec_2020" className="border-none w-full sm:mr-10 md:w-1/4 ">
+            <Link to="/blog/ebec_2020" className="w-full border-none sm:mr-10 md:w-1/4 ">
               <img
                 src={ebec}
                 alt="ebec 2020 engineering competition"
-                className="shadow-xl rounded card2"
+                className="rounded shadow-xl card2"
                 style={{
                   boxShadow: '0 10px 28px rgba(0,0,0,.38)'
                 }}
               />
-              <h4 className="mt-5 font-medium text-xl leading-tight mb-5">
+              <h4 className="mt-5 mb-5 text-xl font-medium leading-tight">
                 EBEC 2020 Engineering Competition
               </h4>
             </Link>
-            <Link to="/blog/stock_price_prediction" className="border-none w-full sm:mx-0 md:w-1/4">
+            <Link to="/blog/stock_price_prediction" className="w-full border-none sm:mx-0 md:w-1/4">
               <img
                 src={stock}
                 alt="stock price prediction bot"
-                className="shadow-xl rounded card2"
+                className="rounded shadow-xl card2"
                 style={{
                   boxShadow: '0 10px 28px rgba(0,0,0,.38)'
                 }}
               />
-              <h4 className="mt-5 font-medium text-xl leading-tight mb-5">
+              <h4 className="mt-5 mb-5 text-xl font-medium leading-tight">
                 Stock Price Prediction Bot with LSTM RNNs
               </h4>
             </Link>
-            <Link to="/blog/ml-course-coursera" className="border-none w-full sm:ml-10 md:w-1/4">
+            <Link to="/blog/ml-course-coursera" className="w-full border-none sm:ml-10 md:w-1/4">
               <img
                 src={machineLearning}
                 alt="machine learning on Coursera"
-                className="shadow-xl rounded card2"
+                className="rounded shadow-xl card2"
                 style={{
                   boxShadow: '0 10px 28px rgba(0,0,0,.38)'
                 }}
               />
-              <h4 className="mt-5 font-medium text-xl leading-tight mb-5">
+              <h4 className="mt-5 mb-5 text-xl font-medium leading-tight">
                 Machine Learning @Coursera by Andrew Ng (review)
               </h4>
             </Link>
@@ -193,30 +189,27 @@ const Index = () => {
         </div>
       </section>
 
-      {/* PRIMA SEZIONE PER MOBILE */}
+      {/* FIRST SECTION - MOBILE */}
       <section className="hidden sm:hidden">
         <div className="mt-5">
-          <p
-            className="text-red-600 font-semibold text-center 
-            text-lg sm:text-left sm:mt-12 sm:ml-10 sm:text-2xl uppercase"
-          >
+          <p className="text-lg font-semibold text-center text-red-600 uppercase sm:text-left sm:mt-12 sm:ml-10 sm:text-2xl">
             Featured Articles
           </p>
-          <hr className="mt-1 mx-10 divider" />
+          <hr className="mx-10 mt-1 divider" />
         </div>
-        <div className="mt-5 sm:mt-8 sm:ml-10 mx-5">
+        <div className="mx-5 mt-5 sm:mt-8 sm:ml-10">
           <div className="md:flex md:justify-center ">
             <div className="relative">
               <Link to="/blog/ebec_2020" className="border-none">
                 <img
                   src={ebec}
                   alt="ebec 2020 engineering competition"
-                  className="z-0 opacity-25 w-full h-48 shadow-xl rounded-lg "
+                  className="z-0 w-full h-48 rounded-lg shadow-xl opacity-25 "
                   style={{
                     boxShadow: '0 10px 28px rgba(0,0,0,.38)'
                   }}
                 />
-                <h4 className="absolute inset-0 mt-20 mx-4 text-center leading-snug text-xl">
+                <h4 className="absolute inset-0 mx-4 mt-20 text-xl leading-snug text-center">
                   EBEC 2020 Engineering Competition
                 </h4>
               </Link>
@@ -226,12 +219,12 @@ const Index = () => {
                 <img
                   src={stock}
                   alt="stock price prediction bot"
-                  className="z-0 opacity-25 w-full shadow-xl rounded-lg"
+                  className="z-0 w-full rounded-lg shadow-xl opacity-25"
                   style={{
                     boxShadow: '0 10px 28px rgba(0,0,0,.38)'
                   }}
                 />
-                <h4 className="absolute inset-0 mt-20 mx-4 text-center leading-snug text-xl">
+                <h4 className="absolute inset-0 mx-4 mt-20 text-xl leading-snug text-center">
                   Stock Price Prediction Bot with LSTM RNNs
                 </h4>
               </Link>
@@ -240,16 +233,15 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 5 ULTIMI ARTICOLI */}
+      {/* LAST 5 ARTICLES */}
       <section>
-        <div className="mt-12 sm:mt-16 mb-8">
+        <div className="mt-12 mb-8 sm:mt-16">
           <Show5Posts />
         </div>
-        <div className="text-center mb-12">
+        <div className="mb-12 text-center">
           <Link to="/blog" className="border-none">
             <button
-              className="fill-current rounded-sm divider uppercase text-xs font-semibold
-            border-solid border-2 px-4 py-1 hover:border-gray-600 tracking-wide focus:outline-none"
+              className="px-4 py-1 text-xs font-semibold tracking-wide uppercase border-2 border-solid rounded-sm fill-current divider hover:border-gray-600 focus:outline-none"
               type="button"
             >
               View More

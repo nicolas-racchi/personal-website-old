@@ -6,10 +6,10 @@ import '../../css/hamburgerMenu.css';
 
 const Header = () => (
   <header className="top-0 z-10">
-    <div className="block bg-red-700 h-2 w-full" />
-    <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-3 px-8">
+    <div className="block w-full h-2 bg-red-700" />
+    <div className="container flex flex-col items-center justify-between px-8 py-3 mx-auto sm:flex-row">
       <div className="flex items-center">
-        <Link to="/" className="border-none font-semibold darkmode text-xl">
+        <Link to="/" className="text-xl font-semibold border-none darkmode">
           Nicolas Racchi
         </Link>
       </div>
@@ -32,8 +32,8 @@ const Header = () => (
           </Link>
         </Menu>
       </div>
-      <div className="flex mt-2 text-base hidden sm:inline">
-        <Link to="/blog" className="border-none px-4" activeClassName="navlink">
+      <div className="flex hidden mt-2 text-base sm:inline">
+        <Link to="/blog" className="px-4 border-none" activeClassName="navlink">
           Articles
         </Link>
         <Link to="/projects" className="px-4 border-none" activeClassName="navlink">
@@ -44,7 +44,7 @@ const Header = () => (
         </Link>
         <Link
           to="/newsletter"
-          className="px-4 border-none hidden md:inline"
+          className="hidden px-4 border-none md:inline"
           activeClassName="navlink"
         >
           Newsletter

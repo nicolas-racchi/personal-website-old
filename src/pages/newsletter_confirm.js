@@ -8,9 +8,9 @@ const newsletter = () => {
     <Layout>
       <Head title="Newsletter Confirmed" desc="Thank you for subscribing to my newsletter!" />
 
-      <section className="container mx-auto max-w-3xl text-center">
+      <section className="container max-w-3xl mx-auto text-center">
         <Title>Thank you!</Title>
-        <p className="mt-6 mx-2 font-normal texl-lg sm:text-xl">
+        <p className="mx-2 mt-6 font-normal texl-lg sm:text-xl">
           Wow! You&apos;ve successfully signed up to my newsletter. <br />
           You&apos;ll be hearing from me soon. Take care!
         </p>
