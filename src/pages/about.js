@@ -14,7 +14,8 @@ const About = () => {
     <Layout>
       <Head
         title="About"
-        desc="Hi, I'm a sophomore studying automation engineering at Polimi. 
+        desc="Hi, I'm in my third year of studies towards a bachelor's 
+        in Automation Engineering at Polimi. 
         Read more about me here!"
       />
 
@@ -27,7 +28,8 @@ const About = () => {
         <div className="container max-w-3xl mx-auto text-center">
           <div className="mx-4 mt-6 sm:mx-2 md:mx-0 sm:mt-5">
             <p className="font-normal texl-lg sm:text-xl">
-              I&apos;m a sophomore studying Automation Engineering at{' '}
+              I&apos;m in my third year of studies towards a bachelor&apos;s in Automation
+              Engineering at{' '}
               <a href="http://www.polimi.it" rel="noopener noreferrer" target="_blank">
                 Polimi
               </a>
