@@ -13,6 +13,7 @@
     "@contentful/rich-text-plain-text-renderer": "^14.0.0",
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@contentful/rich-text-types": "^14.1.0",
+    "framer-motion": "^2.9.4",
     "gatsby": "^2.22.4",
     "gatsby-plugin-canonical-urls": "^2.3.2",
     "gatsby-plugin-dark-mode": "^1.1.2",
@@ -34,6 +35,7 @@
     "react-burger-menu": "^2.6.13",
     "react-code-blocks": "0.0.7",
     "react-dom": "^16.13.1",
+    "react-icons": "^3.11.0",
     "react-spring": "^8.0.27",
     "reading-time": "^1.2.0",
     "typeface-lato": "0.0.75"
