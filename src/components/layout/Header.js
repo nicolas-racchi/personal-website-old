@@ -27,9 +27,9 @@ const Header = () => (
           <Link className="mt-10" to="/about">
             About Me
           </Link>
-          <Link className="mt-3" to="/newsletter">
+          {/* <Link className="mt-3" to="/newsletter">
             Newsletter
-          </Link>
+          </Link> */}
         </Menu>
       </div>
       <div className="flex hidden mt-2 text-base sm:inline">
@@ -42,13 +42,13 @@ const Header = () => (
         <Link to="/about" className="px-4 border-none" activeClassName="navlink">
           About Me
         </Link>
-        <Link
+        {/* <Link
           to="/newsletter"
           className="hidden px-4 border-none md:inline"
           activeClassName="navlink"
         >
           Newsletter
-        </Link>
+        </Link> */}
       </div>
 
       <CustomThemeToggler />

@@ -51,7 +51,7 @@ const About = () => {
               <div className="flex items-end justify-center">
                 <a
                   className="text-sm border-none sm:text-lg"
-                  href="mailto:nicolas@racchi.com"
+                  href="mailto:nicksmavic@gmail.com"
                   rel="noopener noreferrer"
                 >
                   <div className="w-8 mx-3 sm:w-10 sm:mx-5">

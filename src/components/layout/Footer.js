@@ -14,10 +14,10 @@ const Footer = () => (
         </div>
         <a
           className="font-light text-sm text-red-600 border-none"
-          href="mailto:nicolas@racchi.com"
+          href="mailto:nicksmavic@gmail.com"
           rel="noopener noreferrer"
         >
-          nicolas@racchi.com
+          nicksmavic@gmail.com
         </a>
       </div>
     </div>

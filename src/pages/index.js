@@ -123,7 +123,7 @@ const Index = () => {
             <br /> I write about the technologies that inspire me.
           </h3>
         </div>
-        <div className="mx-auto mt-5 text-center">
+        {/* <div className="mx-auto mt-5 text-center">
           <Link to="/newsletter" className="border-none">
             <button
               className="px-3 py-1 tracking-wide text-white bg-red-700 rounded shadow hover:bg-red-600 focus:outline-none sm:py-2 sm:px-4 sm:font-medium"
@@ -132,7 +132,7 @@ const Index = () => {
               Join my Newsletter
             </button>
           </Link>
-        </div>
+        </div> */}
       </section>
 
       {/* FIRST SECTION - DESKTOP */}

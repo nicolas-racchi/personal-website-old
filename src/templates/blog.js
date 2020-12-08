@@ -30,6 +30,8 @@ const Code = ({ children }) => {
     const text = children.split('•');
     const language = text[0];
     const code = text[1];
+
+    // Custom language highlighting
     return (
       <div className="lg:max-w-3xl sm:max-w-xl mx-auto">
         <CopyBlock
@@ -43,6 +45,8 @@ const Code = ({ children }) => {
       </div>
     );
   }
+
+  // default code syntax: bash shell
   return (
     <div className="lg:max-w-3xl sm:max-w-xl mx-auto">
       <CopyBlock
@@ -115,7 +119,8 @@ const Blog = props => {
             {documentToReactComponents(body.json, options)}
           </div>
 
-          <div className="bg-gray-100 p-4 rounded-t-lg mb-1 mt-10 sm:mx-16 shadow">
+          {/* Newsletter subscription form - adjust top border radius to keep */}
+          {/* <div className="bg-gray-100 p-4 rounded-t-lg mb-1 mt-10 sm:mx-16 shadow">
             <div className="mx-4 flex justify-between items-center ">
               <p className="text-sm sm:text-xl text-gray-700 italic">
                 Subcribe to my <span className="underline">awesome</span> tech newsletter
@@ -129,9 +134,10 @@ const Blog = props => {
                 Join
               </a>
             </div>
-          </div>
+          </div> */}
 
-          <div className="bg-gray-100 p-4 rounded-b-lg mb-10 sm:mx-16 shadow">
+          {/* if adding newsletter button, change rounded-lg to rounded-b-lg */}
+          <div className="bg-gray-100 p-4 rounded-lg mb-10 sm:mx-16 shadow">
             <div className="mx-4 flex justify-between items-center ">
               <p className="text-sm sm:text-xl text-gray-700 italic">
                 Share this article on <span className="underline">Twitter</span> to help others see

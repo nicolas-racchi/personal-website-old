@@ -24,11 +24,7 @@ const BlogPage = () => {
       <Head title="Articles" desc="Welcome to my blog. Here's a list of all my articles." />
 
       <div>
-        <Title>
-          Here&apos;s a list of all my articles.
-          <br />
-          Subscribe to my <Link to="/newsletter">newsletter</Link> to not miss my next write-up.
-        </Title>
+        <Title>Here&apos;s a list of all my articles.</Title>
         <ol className="mx-5 mt-10 sm:mx-auto sm:max-w-xl">
           {data.allContentfulBlogPost.edges.map(edge => {
             return (

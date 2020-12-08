@@ -25,7 +25,7 @@ const Projects = () => {
       <Head title="Projects" desc="Take a look at my projects!" />
       <div className="container mx-auto text-center">
         <Title>Take a look at my Projects</Title>
-        <div className="mx-3 mt-4 cards">
+        <div className="mx-3 mt-8 cards">
           {data.allContentfulProject.edges.map(edge => {
             return (
               <div className="p-4 rounded shadow-lg card" key={edge.node.projectName}>
